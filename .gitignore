@@ -1,0 +1,10 @@
+/.idea/
+/mall-admin/target/
+/mall-auth/target/
+/mall-common/target/
+/mall-demo/target/
+/mall-gateway/target/
+/mall-mbg/target/
+/mall-monitor/target/
+/mall-portal/target/
+/mall-search/target/
