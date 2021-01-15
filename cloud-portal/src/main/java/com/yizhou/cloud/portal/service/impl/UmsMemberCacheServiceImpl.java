@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * UmsMemberCacheService实现类
- * Created by macro on 2020/3/14.
+ * Created by yizhou on 2020/3/14.
  */
 @Service
 public class UmsMemberCacheServiceImpl implements UmsMemberCacheService {

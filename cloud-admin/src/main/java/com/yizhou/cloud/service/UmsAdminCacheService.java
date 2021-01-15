@@ -4,7 +4,7 @@ import com.yizhou.cloud.model.UmsAdmin;
 
 /**
  * 后台用户缓存操作类
- * Created by macro on 2020/3/13.
+ * Created by yizhou on 2020/3/13.
  */
 public interface UmsAdminCacheService {
     /**

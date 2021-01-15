@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * 认证服务远程调用
- * Created by macro on 2020/7/19.
+ * Created by yizhou on 2020/7/19.
  */
 @FeignClient("cloud-auth")
 public interface AuthService {

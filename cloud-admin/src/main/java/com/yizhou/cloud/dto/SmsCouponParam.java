@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * 优惠券信息封装，包括绑定商品和绑定分类
- * Created by macro on 2018/8/28.
+ * Created by yizhou on 2018/8/28.
  */
 public class SmsCouponParam extends SmsCoupon {
     @Getter

@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 商品专题Service
- * Created by macro on 2018/6/1.
+ * Created by yizhou on 2018/6/1.
  */
 public interface CmsSubjectService {
     /**

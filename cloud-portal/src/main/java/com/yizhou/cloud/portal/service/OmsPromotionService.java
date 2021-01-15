@@ -6,7 +6,7 @@ import com.yizhou.cloud.portal.domain.CartPromotionItem;
 import java.util.List;
 
 /**
- * Created by macro on 2018/8/27.
+ * Created by yizhou on 2018/8/27.
  * 促销管理Service
  */
 public interface OmsPromotionService {

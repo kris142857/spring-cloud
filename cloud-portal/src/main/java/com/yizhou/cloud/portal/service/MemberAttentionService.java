@@ -5,7 +5,7 @@ import org.springframework.data.domain.Page;
 
 /**
  * 会员关注Service
- * Created by macro on 2018/8/2.
+ * Created by yizhou on 2018/8/2.
  */
 public interface MemberAttentionService {
     /**

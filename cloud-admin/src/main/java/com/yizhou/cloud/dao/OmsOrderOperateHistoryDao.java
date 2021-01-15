@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 订单操作记录自定义Dao
- * Created by macro on 2018/10/12.
+ * Created by yizhou on 2018/10/12.
  */
 public interface OmsOrderOperateHistoryDao {
     /**

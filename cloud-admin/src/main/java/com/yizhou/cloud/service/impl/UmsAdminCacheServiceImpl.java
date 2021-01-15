@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * UmsAdminCacheService实现类
- * Created by macro on 2020/3/13.
+ * Created by yizhou on 2020/3/13.
  */
 @Service
 public class UmsAdminCacheServiceImpl implements UmsAdminCacheService {

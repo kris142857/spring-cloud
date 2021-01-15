@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 /**
- * Created by macro on 2019/10/18.
+ * Created by yizhou on 2019/10/18.
  */
 @FeignClient("cloud-admin")
 public interface FeignAdminService {

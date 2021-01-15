@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * Feign调用mall-search接口示例
- * Created by macro on 2019/10/22.
+ * Created by yizhou on 2019/10/22.
  */
 @Api(tags = "FeignSearchController", description = "Feign调用mall-search接口示例")
 @RestController

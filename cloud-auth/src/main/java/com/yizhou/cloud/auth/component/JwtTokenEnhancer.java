@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * JWT内容增强器
- * Created by macro on 2020/6/19.
+ * Created by yizhou on 2020/6/19.
  */
 @Component
 public class JwtTokenEnhancer implements TokenEnhancer {

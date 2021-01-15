@@ -2,7 +2,7 @@ package com.yizhou.cloud.auth.constant;
 
 /**
  * 消息常量
- * Created by macro on 2020/6/19.
+ * Created by yizhou on 2020/6/19.
  */
 public class MessageConstant {
 

@@ -15,7 +15,7 @@ import java.util.Date;
 
 /**
  * 会员关注Service实现类
- * Created by macro on 2018/8/2.
+ * Created by yizhou on 2018/8/2.
  */
 @Service
 public class MemberAttentionServiceImpl implements MemberAttentionService {

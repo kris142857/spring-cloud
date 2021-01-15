@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 订单管理Service
- * Created by macro on 2018/10/11.
+ * Created by yizhou on 2018/10/11.
  */
 public interface OmsOrderService {
     /**

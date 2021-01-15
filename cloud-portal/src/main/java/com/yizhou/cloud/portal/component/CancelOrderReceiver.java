@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 取消订单消息的处理者
- * Created by macro on 2018/9/14.
+ * Created by yizhou on 2018/9/14.
  */
 @Component
 @RabbitListener(queues = "cloud.order.cancel")
