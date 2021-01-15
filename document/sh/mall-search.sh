@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-app_name='mall-search'
-group_name='mall'
+app_name='cloud-search'
+group_name='cloud'
 app_version='1.0-SNAPSHOT'
 
 docker stop ${app_name}

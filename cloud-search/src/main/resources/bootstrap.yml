@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: deve
+  application:
+    name: cloud-search

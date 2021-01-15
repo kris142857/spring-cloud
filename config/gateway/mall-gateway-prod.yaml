@@ -8,12 +8,12 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: 'http://mall-gateway:8201/mall-auth/rsa/publicKey'
+          jwk-set-uri: 'http://cloud-gateway:8201/cloud-auth/rsa/publicKey'
 logging:
   file:
     path: /var/logs
   level:
     root: info
-    com.macro.mall: info
+    com.yizhou.cloud: info
 logstash:
   host: logstash

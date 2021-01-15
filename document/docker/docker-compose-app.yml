@@ -1,25 +1,25 @@
 version: '3'
 services:
-  mall-admin:
-    image: mall/mall-admin:1.0-SNAPSHOT
-    container_name: mall-admin
+  cloud-admin:
+    image: cloud/cloud-admin:1.0-SNAPSHOT
+    container_name: cloud-admin
     ports:
       - 8080:8080
     volumes:
-      - /home/app/mall-admin/logs:/var/logs
+      - /home/app/cloud-admin/logs:/var/logs
       - /etc/localtime:/etc/localtime
     environment:
       - 'TZ="Asia/Shanghai"'
     external_links:
       - mysql:db #可以用db这个域名访问mysql服务
       - nacos-registry:nacos-registry #可以用nacos-registry这个域名访问nacos服务
-  mall-search:
-    image: mall/mall-search:1.0-SNAPSHOT
-    container_name: mall-search
+  cloud-search:
+    image: cloud/cloud-search:1.0-SNAPSHOT
+    container_name: cloud-search
     ports:
       - 8081:8081
     volumes:
-      - /home/app/mall-search/logs:/var/logs
+      - /home/app/cloud-search/logs:/var/logs
       - /etc/localtime:/etc/localtime
     environment:
       - 'TZ="Asia/Shanghai"'
@@ -27,13 +27,13 @@ services:
       - elasticsearch:es #可以用es这个域名访问elasticsearch服务
       - mysql:db #可以用db这个域名访问mysql服务
       - nacos-registry:nacos-registry #可以用nacos-registry这个域名访问nacos服务
-  mall-portal:
-    image: mall/mall-portal:1.0-SNAPSHOT
-    container_name: mall-portal
+  cloud-portal:
+    image: cloud/cloud-portal:1.0-SNAPSHOT
+    container_name: cloud-portal
     ports:
       - 8085:8085
     volumes:
-      - /home/app/mall-portal/logs:/var/logs
+      - /home/app/cloud-portal/logs:/var/logs
       - /etc/localtime:/etc/localtime
     environment:
       - 'TZ="Asia/Shanghai"'
@@ -43,38 +43,38 @@ services:
       - mysql:db #可以用db这个域名访问mysql服务
       - rabbitmq:rabbit #可以用rabbit这个域名访问rabbitmq服务
       - nacos-registry:nacos-registry #可以用nacos-registry这个域名访问nacos服务
-  mall-auth:
-    image: mall/mall-auth:1.0-SNAPSHOT
-    container_name: mall-auth
+  cloud-auth:
+    image: cloud/cloud-auth:1.0-SNAPSHOT
+    container_name: cloud-auth
     ports:
       - 8401:8401
     volumes:
-      - /home/app/mall-auth/logs:/var/logs
+      - /home/app/cloud-auth/logs:/var/logs
       - /etc/localtime:/etc/localtime
     environment:
       - 'TZ="Asia/Shanghai"'
     external_links:
       - nacos-registry:nacos-registry #可以用nacos-registry这个域名访问nacos服务
-  mall-gateway:
-    image: mall/mall-gateway:1.0-SNAPSHOT
-    container_name: mall-gateway
+  cloud-gateway:
+    image: cloud/cloud-gateway:1.0-SNAPSHOT
+    container_name: cloud-gateway
     ports:
       - 8201:8201
     volumes:
-      - /home/app/mall-gateway/logs:/var/logs
+      - /home/app/cloud-gateway/logs:/var/logs
       - /etc/localtime:/etc/localtime
     environment:
       - 'TZ="Asia/Shanghai"'
     external_links:
       - redis:redis #可以用redis这个域名访问redis服务
       - nacos-registry:nacos-registry #可以用nacos-registry这个域名访问nacos服务
-  mall-monitor:
-    image: mall/mall-monitor:1.0-SNAPSHOT
-    container_name: mall-monitor
+  cloud-monitor:
+    image: cloud/cloud-monitor:1.0-SNAPSHOT
+    container_name: cloud-monitor
     ports:
       - 8101:8101
     volumes:
-      - /home/app/mall-monitor/logs:/var/logs
+      - /home/app/cloud-monitor/logs:/var/logs
       - /etc/localtime:/etc/localtime
     environment:
       - 'TZ="Asia/Shanghai"'

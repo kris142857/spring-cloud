@@ -7,16 +7,16 @@
 ## 组织结构
 
 ``` lua
-mall
-├── mall-common -- 工具类及通用代码模块
-├── mall-mbg -- MyBatisGenerator生成的数据库操作代码模块
-├── mall-auth -- 基于Spring Security Oauth2的统一的认证中心
-├── mall-gateway -- 基于Spring Cloud Gateway的微服务API网关服务
-├── mall-monitor -- 基于Spring Boot Admin的微服务监控中心
-├── mall-admin -- 后台管理系统服务
-├── mall-search -- 基于Elasticsearch的商品搜索系统服务
-├── mall-portal -- 移动端商城系统服务
-├── mall-demo -- 微服务远程调用测试服务
+cloud
+├── cloud-common -- 工具类及通用代码模块
+├── cloud-generator -- MyBatisGenerator生成的数据库操作代码模块
+├── cloud-auth -- 基于Spring Security Oauth2的统一的认证中心
+├── cloud-gateway -- 基于Spring Cloud Gateway的微服务API网关服务
+├── cloud-monitor -- 基于Spring Boot Admin的微服务监控中心
+├── cloud-admin -- 后台管理系统服务
+├── cloud-search -- 基于Elasticsearch的商品搜索系统服务
+├── cloud-portal -- 移动端商城系统服务
+├── cloud-demo -- 微服务远程调用测试服务
 └── config -- 配置中心存储的配置
 ```
 

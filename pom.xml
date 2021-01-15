@@ -4,21 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.macro.mall</groupId>
-    <artifactId>mall-swarm</artifactId>
+    <groupId>com.yizhou.cloud</groupId>
+    <artifactId>cloud-swarm</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>mall-common</module>
-        <module>mall-mbg</module>
-        <module>mall-demo</module>
-        <module>mall-admin</module>
-        <module>mall-search</module>
-        <module>mall-portal</module>
-        <module>mall-monitor</module>
-        <module>mall-gateway</module>
-        <module>mall-auth</module>
+        <module>cloud-common</module>
+        <module>cloud-generator</module>
+        <module>cloud-demo</module>
+        <module>cloud-admin</module>
+        <module>cloud-search</module>
+        <module>cloud-portal</module>
+        <module>cloud-monitor</module>
+        <module>cloud-gateway</module>
+        <module>cloud-auth</module>
     </modules>
 
     <parent>
@@ -52,8 +52,8 @@
         <minio.version>7.1.0</minio.version>
         <knife4j.version>2.0.4</knife4j.version>
         <nimbus-jose-jwt.version>8.16</nimbus-jose-jwt.version>
-        <mall-common.version>1.0-SNAPSHOT</mall-common.version>
-        <mall-mbg.version>1.0-SNAPSHOT</mall-mbg.version>
+        <cloud-common.version>1.0-SNAPSHOT</cloud-common.version>
+        <cloud-generator.version>1.0-SNAPSHOT</cloud-generator.version>
     </properties>
 
     <dependencies>
@@ -105,15 +105,15 @@
             </dependency>
             <!--mall通用模块-->
             <dependency>
-                <groupId>com.macro.mall</groupId>
-                <artifactId>mall-common</artifactId>
-                <version>${mall-common.version}</version>
+                <groupId>com.yizhou.cloud</groupId>
+                <artifactId>cloud-common</artifactId>
+                <version>${cloud-common.version}</version>
             </dependency>
             <!--mall中MBG生成模块-->
             <dependency>
-                <groupId>com.macro.mall</groupId>
-                <artifactId>mall-mbg</artifactId>
-                <version>${mall-mbg.version}</version>
+                <groupId>com.yizhou.cloud</groupId>
+                <artifactId>cloud-generator</artifactId>
+                <version>${cloud-generator.version}</version>
             </dependency>
             <!--MyBatis分页插件starter-->
             <dependency>
@@ -234,7 +234,7 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <imageName>mall/${project.artifactId}:${project.version}</imageName>
+                        <imageName>cloud/${project.artifactId}:${project.version}</imageName>
                         <dockerHost>${docker.host}</dockerHost>
                         <baseImage>java:8</baseImage>
                         <entryPoint>["java", "-jar", "-Dspring.profiles.active=prod","/${project.build.finalName}.jar"]</entryPoint>

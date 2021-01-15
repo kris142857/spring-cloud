@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-app_name='mall-auth'
-group_name='mall'
+app_name='cloud-auth'
+group_name='cloud'
 app_version='1.0-SNAPSHOT'
 
 docker stop ${app_name}

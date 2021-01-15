@@ -1,5 +1,0 @@
-spring:
-  profiles:
-    active: deve
-  application:
-    name: mall-demo
