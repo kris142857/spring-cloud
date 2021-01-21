@@ -17,6 +17,7 @@ docker run -p 8081:8081 --name ${app_name} \
 --link mysql:db \
 --link elasticsearch:es \
 --link nacos-registry:nacos-registry \
+--network docker_default \
 -e TZ="Asia/Shanghai" \
 -v /etc/localtime:/etc/localtime \
 -v /home/app/${app_name}/logs:/var/logs \

@@ -16,6 +16,7 @@ echo '----build image----'
 docker run -p 8080:8080 --name ${app_name} \
 --link mysql:db \
 --link nacos-registry:nacos-registry \
+--network docker_default \
 -e TZ="Asia/Shanghai" \
 -v /etc/localtime:/etc/localtime \
 -v /home/app/${app_name}/logs:/var/logs \

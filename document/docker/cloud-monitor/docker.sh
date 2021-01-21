@@ -15,6 +15,7 @@ echo '----build image----'
 
 docker run -p 8101:8101 --name ${app_name} \
 --link nacos-registry:nacos-registry \
+--network docker_default \
 -e TZ="Asia/Shanghai" \
 -v /etc/localtime:/etc/localtime \
 -v /home/app/${app_name}/logs:/var/logs \
